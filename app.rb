@@ -13,6 +13,8 @@ module FormsLab
 
     post '/pirates' do
       @pirate = Pirate.new(params[:pirate])
+      
+      
       @ships = params[:ship]
       erb :display 
     end
